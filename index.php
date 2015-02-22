@@ -9,11 +9,13 @@ require_once "view/card_view.php";
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/card.css">
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
   </head>
   <body>
     <div class="whole-wrapper">
       <h1>Demo:</h1>
       <p>Enter width, height, and radius below, the card will change its size and shape accordingly; Click the card to flip it -- Kaiyu</p>
+      <p>Thanks to <a href="http://jqueryui.com/draggable/">JQuery UI</a>, you can also drag it around!</p>
       <div class="main-content">
 	<!-- This section is a demo for the card div -->
 	<p>Width:<input type="text" id="width-field" class="text-field" value="100" pattern="[0-9]+"></p>

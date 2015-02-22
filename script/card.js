@@ -22,6 +22,9 @@ $(document).ready(function() {
       'border-radius': radius + 'px'
     });
   });
+
+  // Make the card draggable
+  $(".one-card").draggable();
     
 });
 
