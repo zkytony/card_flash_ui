@@ -19,13 +19,19 @@ $(document).ready(function() {
     $(".one-card").css({
       'width': width + 'px',
       'height': height + 'px',
+    });
+    // apply radius - needs to apply directly on front and back
+    $(".one-card-front").css({
+      'border-radius': radius + 'px'
+    });
+    $(".one-card-back").css({
       'border-radius': radius + 'px'
     });
   });
 
   // Make the card draggable
   $(".one-card").draggable();
-    
+
 });
 
 // This is a helper function for flipping the element
