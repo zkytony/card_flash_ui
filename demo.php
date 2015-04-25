@@ -21,6 +21,8 @@ require_once "view/card_view.php";
 	<p>Width:<input type="text" id="width-field" class="text-field" value="100" pattern="[0-9]+"></p>
 	<p>Height:<input type="text" id="height-field" class="text-field" value="60" pattern="[0-9]+"></p>
 	<p>Radius:<input type="text" id="radius-field" class="text-field" value="60" pattern="[0-9]+"></p>
+    <p>FrontText:<input type="text" id="front-field" class="text-field" value="60" pattern="[0-9]+"></p>
+    <p>BackText:<input type="text" id="back-field" class="text-field" value="60" pattern="[0-9]+"></p>
 	<button class="btn" id="refresh-btn">Refresh</button>
 	<div class="card-div-wrapper" id="card-container-0"></div>
 	<script src="script/card.js"></script>
@@ -28,6 +30,10 @@ require_once "view/card_view.php";
 	 var width = parseInt($('#width-field').val());
 	 var height = parseInt($('#height-field').val());
 	 var radius = parseInt($('#radius-field').val());
+	 
+	 var front = ($('#front-field').val());
+	 var back = ($('#back-field').val());
+	 
 
 	 showCard(width, height, radius, 'demo', 'card-container-0');
 	</script>

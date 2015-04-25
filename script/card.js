@@ -54,12 +54,12 @@ function flip(jqueryObj) {
 // radius - the radius of the round corner; set to 0 if want right angle corners
 // id - the id you want to give for this card div
 // parentID - the parent element's id you want to append this card div to
-function showCard(width, height, radius, id, parentID) {
+function showCard(front, back, width, height, radius, id, parentID) {
   // 'one-card' class defines the general style of one card
   // 'flipper', 'flipper-front', 'flipper-back', 'flip', together makes the div flippable
   var html = "<div id='" + id + "-card' class='one-card flipper'>";
-  html += "<div id='" + id + "-front' class='one-card-front flipper-front'></div>";
-  html += "<div id='" + id + "-back' class='one-card-back flipper-back'></div>";
+  html += "<div id='" + id + "-front' class='one-card-front flipper-front'> " + front + "</div>";
+  html += "<div id='" + id + "-back' class='one-card-back flipper-back'> " + back + "</div>";
   html += "</div>";
 
   $("#" + parentID).append(html);
