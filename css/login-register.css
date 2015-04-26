@@ -16,7 +16,8 @@ img{
 	height: 12pt;
 	cursor: help;
 }
- fieldset, input{
+ 
+fieldset, input{
  	border-color: #CCA3CC;
  }
 .submit{
@@ -47,4 +48,9 @@ input{
 .checkbox{
 	width: 20%;
 	cursor: pointer;
+}
+
+#register-login-card {
+        width: 250px;
+	height: 600px;
 }
