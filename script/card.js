@@ -10,7 +10,7 @@ $(document).ready(function() {
   });
 
   $(document).on("click", "#loginLink", function(e) {
-    flip($("#register-login"));
+    flip($("#register-login-card"));
   });
   
   
