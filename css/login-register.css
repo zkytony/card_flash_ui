@@ -1,0 +1,50 @@
+body{
+	width: 20%;
+	color: #87507A;
+	font-size: 12pt;
+}
+
+fieldset {
+	border-style: groove;
+	border-width: 5px;
+	border-radius: 10px;
+	height: 90%;
+}
+
+img{
+	width: 12pt;
+	height: 12pt;
+	cursor: help;
+}
+ fieldset, input{
+ 	border-color: #CCA3CC;
+ }
+.submit{
+	font-size: 15pt;
+	cursor: pointer;
+	background-color: #751975;
+	width: 60pt;
+	height: 25pt;
+	color: #E0E0E0;
+	border-radius: 10px;
+	border: none;
+}
+.loginsubmit{
+	width: 92%;
+}
+
+input{
+	width: 85%;
+	border-radius: 5px;
+	padding: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 12pt;
+	font-weight: bold;
+	color: #786378;
+}
+
+.checkbox{
+	width: 20%;
+	cursor: pointer;
+}
