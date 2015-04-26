@@ -8,6 +8,11 @@ $(document).ready(function() {
   $(document).on("click", ".one-card", function(e) {
     flip($(this));
   });
+
+  $(document).on("click", "#loginLink", function(e) {
+    flip($("#register-login"));
+  });
+  
   
   // This function is called when refresh-btn is clicked
   // We want to update the display of the card
@@ -30,7 +35,7 @@ $(document).ready(function() {
   });
 
   // Make the card draggable
-  $(".one-card").draggable();
+  //$(".one-card").draggable();
 
 });
 
@@ -49,17 +54,19 @@ function flip(jqueryObj) {
 // Builds an HTML string for the card div
 // and appends this HTML string to the parent element given
 //
+// front - the html for stuff to show on the front
+// back -  the html for stuff to show on the back
 // width - the width of the card (in pixel);
 // height - the height of the card (in pixel);
 // radius - the radius of the round corner; set to 0 if want right angle corners
 // id - the id you want to give for this card div
 // parentID - the parent element's id you want to append this card div to
-function showCard(width, height, radius, id, parentID) {
+function showCard(front, back, width, height, radius, id, parentID) {
   // 'one-card' class defines the general style of one card
   // 'flipper', 'flipper-front', 'flipper-back', 'flip', together makes the div flippable
   var html = "<div id='" + id + "-card' class='one-card flipper'>";
-  html += "<div id='" + id + "-front' class='one-card-front flipper-front'></div>";
-  html += "<div id='" + id + "-back' class='one-card-back flipper-back'></div>";
+  html += "<div id='" + id + "-front' class='one-card-front flipper-front'>" + front + "</div>";
+  html += "<div id='" + id + "-back' class='one-card-back flipper-back'>" + back + "</div>";
   html += "</div>";
 
   $("#" + parentID).append(html);
