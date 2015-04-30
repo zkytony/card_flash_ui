@@ -1,17 +1,15 @@
-body{
-	width: 20%;
-	color: #87507A;
-	font-size: 12pt;
+fieldset {
+    font-family: 'Nunito', sans-serif;
 }
 
 fieldset {
 	border-style: groove;
 	border-width: 5px;
 	border-radius: 10px;
-	height: 90%;
+	height: 70%;
 }
 
-img{
+fieldset img{
 	width: 12pt;
 	height: 12pt;
 	cursor: help;
@@ -52,5 +50,8 @@ input{
 
 #register-login-card {
         width: 250px;
-	height: 600px;
+}
+
+#register-login-card fieldset {
+        height:400px;
 }

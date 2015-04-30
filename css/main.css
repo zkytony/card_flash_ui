@@ -132,15 +132,23 @@ a {
 }
 
 /*will not be used officially*/
-.one-card {
+.demo-card {
     float:left;
     width:230px;
     height:140px;
     border-radius:10px;
     margin-bottom:15px;
     margin-right:15px;
+}
+
+.one-card-front {
     background-color:grey;
 }
+
+.one-card-back {
+    background-color:black;
+}
+
 
 .login-form {
     width:100%;
