@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Koolio</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" href="css/login-register.css" type="text/css" />
     <link rel="stylesheet" href="css/card.css" type="text/css" />
+    <link rel="stylesheet" href="css/searchbar.css" type="text/css" />
 
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Nunito:400,700' rel='stylesheet' type='text/css'>
@@ -19,7 +19,13 @@
     <div class="container">
       <div class="topbar">
 	<span class="logo"><h1>KOOLIO</h1></span>
-	<span class="search-bar" id="search-bar-on-top"></span>
+	<!-- Where the search bar goe -->
+	<span class="search-bar" id="search-bar-on-top-span">
+	  <form>
+	    <input id="search-bar-on-top-input" type="text" placeholder="Search on Koolio...">
+	    <input type="submit" class="search-button" value="Go">
+	  </form>
+	</span>
       </div>
       <div class="main-content">
 	<div class="card-area">
