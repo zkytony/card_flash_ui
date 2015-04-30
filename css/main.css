@@ -25,7 +25,7 @@ a {
     height:50px;
 }
 
-.logo, .search-bar, top-link {
+.logo, top-link {
     float:left;
 }
 
@@ -38,18 +38,6 @@ a {
     /*border-radius:10px;*/
     text-align:center;
     color:#FFF;
-}
-
-.search-bar {
-    width:400px;
-    height:75%;
-    background-color:#FFF;
-    border:5px solid #FFF;
-    border-radius:15px;
-}
-
-.search-bar:hover {
-    background-color:#660066;
 }
 
 .top-link {
