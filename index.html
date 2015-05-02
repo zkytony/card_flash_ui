@@ -1,37 +1,65 @@
 <!DOCTYPE html>
 <html>
-    <head>
-	<meta charset="utf-8">
-	<!-- Width of website equal to the width of native device -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8">
+    <!-- Width of website equal to the width of native device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Koolio</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="css/card.css" type="text/css" />
+    <link rel="stylesheet" href="css/searchbar.css" type="text/css" />
 
-	<title>Koolio</title>
-	<link href="css/index-main.css" type="text/css">
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Nunito:400,700' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
 
-	<!-- Include Pure CSS http://purecss.io/grids/-->
-	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-	<!-- Normalize CSS, the base for pure.css -->
-	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/base-min.css">
-    </head>
-    <body>
-	<div class="container">
-	    <!-- Navbar -->
-	    <div class="pure-g navbar-wrapper">
-		<div class="pure-u-1 navbar">
-		    
-		</div>
-	    </div>
-
-	    <!-- Main Content -->	
-	    <!-- The card area -->
-	    <!-- The form area -->
-
-	    <!-- Footer -->
-	    <div class="pure-g footer-wrapper">
-		<div class="pure-u-1 footer">
-		    
-		</div>
-	    </div>
+  </head>
+  <body>
+    <div class="container">
+      <div class="topbar">
+	<span class="logo"><h1>KOOLIO</h1></span>
+	<!-- Where the search bar goe -->
+	<span class="search-bar" id="search-bar-on-top-span">
+	  <form>
+	    <input id="search-bar-on-top-input" type="text" placeholder="Search on Koolio...">
+	    <input type="submit" class="search-button" value="Go">
+	  </form>
+	</span>
+      </div>
+      <div class="main-content">
+	<div class="card-area">
+	  <div class="demo-card" id="card-0"></div>
+	  <div class="demo-card" id="card-1"></div>
+	  <div class="demo-card" id="card-2"></div>
+	  <div class="demo-card" id="card-3"></div>
+	  <div class="demo-card" id="card-4"></div>
+	  <div class="demo-card" id="card-5"></div>
+	  <div class="demo-card" id="card-6"></div>
+	  <div class="demo-card" id="card-7"></div>
+	  <div class="demo-card" id="card-8"></div>
 	</div>
-    </body>
+	<div class="login-form-wrapper">
+	  <div class="login-form"></div>
+	</div>
+      </div>
+      <div class="footer">
+	<div class="footer-links">
+	  <a href="#">About</a>
+	  <a href="#">Feedback</a>
+	</div>
+	<div class="copyright">
+	  <strong>Copyright Koolio.io</strong>
+	</div>
+      </div>
+    </div>
+    <script type="text/javascript" src="script/card.js"></script>
+    <script>
+     for (var i = 0; i < 9; i++) {
+       var parentID = "card-" + i;
+       var cardID = "dummy-" + i;
+       showCard("", "", 230, 140, 10, cardID, parentID);
+     }
+    </script>
+  </body>
 </html>

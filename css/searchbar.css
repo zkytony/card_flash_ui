@@ -1,0 +1,50 @@
+/*A class for span*/
+.search-bar {
+  float:left;
+  width:400px;
+  height:80%;
+}
+
+.search-bar input {
+  float:left;
+}
+
+.search-bar input[type="submit"] {
+  font-family: 'Nunito', sans-serif;
+  font-size:18px;
+  width:14%;
+  line-height: 40px;
+  -webkit-border-top-right-radius: 15px;
+  -webkit-border-bottom-right-radius: 15px;
+  -moz-border-radius-topright: 15px;
+  -moz-border-radius-bottomright: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border:5px solid #FFF;
+  background-color:#508686;
+  color:#EFEFEF;
+}
+
+.search-bar input[type="submit"]:hover {
+  background-color:#85E0E0;
+  color:#000;
+}
+
+.search-bar {
+}
+
+.search-bar input[type="text"] {
+  font-family: 'Nunito', sans-serif;
+  font-size:18px;
+
+  width:83%;
+  line-height: 40px;
+  background-color:#FFF;
+  -webkit-border-top-left-radius: 15px;
+  -webkit-border-bottom-left-radius: 15px;
+  -moz-border-radius-topleft: 15px;
+  -moz-border-radius-bottomleft: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border:5px solid #FFF;
+}
