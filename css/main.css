@@ -12,6 +12,26 @@ img {
     margin:0px;
 }
 
+/*will not be used officially*/
+.demo-card {
+    float:left;
+    width:230px;
+    height:140px;
+    border-radius:10px;
+    margin-bottom:15px;
+    margin-right:15px;
+}
+
+.one-card-front {
+    background-color:grey;
+    overflow:hidden;
+}
+
+.one-card-back {
+    background-color:white;
+    overflow:hidden;
+}
+
 .container {
     max-width:1200px;
     margin:auto;
@@ -85,6 +105,138 @@ img {
     float:left;
     width:25%;
     height:100%;
+  position:relative;
+}
+
+/* Placeholder color */
+::-webkit-input-placeholder {
+    color:    #A9A7A8;
+}
+:-moz-placeholder {
+    color:    #A9A7A8;
+}
+::-moz-placeholder {
+    color:    #A9A7A8;
+}
+:-ms-input-placeholder {
+    color:    #A9A7A8;
+}
+
+#login-form-card {
+  width:100%;
+  height:70%;
+}
+
+.login-form {
+    background-color:#FFCCCC;
+    border-radius:5px;
+  height:100%;
+}
+
+.login-form h3 {
+  font-family: 'Nunito', sans-serif;
+  font-size:30px;
+  margin:0px;
+  margin-left:5%;
+  padding-top:5%;
+  line-height:25px;
+}
+
+.login-form form {
+  width:80%;
+  margin:auto;
+  margin-top:35px;
+}
+
+.login-form form input[type="text"], .login-form form input[type="password"] {
+  font-family: 'Nunito', sans-serif;
+  font-size:16px;
+
+  background-color:#FFE0E0;
+  border-radius:5px;
+  border:none;
+  width: 100%; 
+  height:40px;
+  padding:10px;
+  margin-top:2px;
+
+  box-sizing: border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing: border-box
+}
+
+#submit-sign-up-btn {
+  margin-top:15px;
+  position:relative;
+  left:65%;
+  width:35%;
+  height:30px;
+  background-color:#661133;
+}
+
+#submit-login-btn {
+  margin-top:15px;
+  position:relative;
+  left:65%;
+  width:35%;
+  height:30px;
+  background-color:#336699;
+}
+
+.login-form-btn {
+  font-family: 'Nunito', sans-serif;
+  font-size:16px;
+  
+  color:#FFF;
+  border-radius:5px;
+  border:none;
+}
+
+.login-form-btn:hover {
+  -moz-box-shadow:    0 0 10px #000000;
+  -webkit-box-shadow: 0 0 10px #000000;
+  box-shadow:         0 0 10px #000000;
+}
+
+.login-form-btn:active {
+  -moz-box-shadow:    inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow:         inset 0 0 10px #000000;
+}
+
+#flip-to-login-btn {
+  background-color:#336699;
+  width:60px;
+  height:60px;
+  border-radius:30px;
+}
+
+#flip-to-join-btn {
+  background-color:#661133;
+  width:60px;
+  height:60px;
+  border-radius:30px;
+}
+
+.lower-left {
+  position:absolute;  
+  left:5%;
+  bottom:8%;
+}
+
+.classy {
+  font-family: 'Nunito', sans-serif;
+  font-size:16px;
+}
+
+.gap-left {
+  margin-left:10px;
+}
+
+.shadow {
+  -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
 }
 
 .footer {
@@ -123,34 +275,6 @@ img {
     color:#99F;
 }
 
-/*will not be used officially*/
-.demo-card {
-    float:left;
-    width:230px;
-    height:140px;
-    border-radius:10px;
-    margin-bottom:15px;
-    margin-right:15px;
-}
-
-.one-card-front {
-    background-color:grey;
-    overflow:hidden;
-}
-
-.one-card-back {
-    background-color:white;
-    overflow:hidden;
-}
-
-
-.login-form {
-    width:100%;
-    height:70%;
-    background-color:pink;
-    border-radius:5px;
-    
-}
 
 /* These styles are only for demo purposes */
 #example-0-front {
