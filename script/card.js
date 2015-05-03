@@ -25,12 +25,12 @@ $(document).ready(function() {
     flip($(this));
   });
     
-  $(document).on("click", "#loginLink", function(e) {
-    flip($("#register-login-card"));
+  $(document).on("click", "#flip-to-login-btn", function(e) {
+    flip($("#login-form-card"));
   });
 
-  $(document).on("click", "#loginLink", function(e) {
-    flip($("#register-login-card"));
+  $(document).on("click", "#flip-to-join-btn", function(e) {
+    flip($("#login-form-card"));
   });
 
 });
