@@ -8,6 +8,7 @@
 
 .one-card {
   margin-top:10px;
+  position:absolute;
 }
 
 .one-card:hover {
@@ -17,11 +18,13 @@
 .one-card-front {
   width:100%;
   height:100%;
+  position:relative;
 }
 
 .one-card-back {
   width:100%;
   height:100%;
+  position:relative;
 }
 
 /* Flip  */

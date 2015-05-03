@@ -8,6 +8,10 @@ a {
     text-decoration:none;
 }
 
+img {
+    margin:0px;
+}
+
 .container {
     max-width:1200px;
     margin:auto;
@@ -131,10 +135,12 @@ a {
 
 .one-card-front {
     background-color:grey;
+    overflow:hidden;
 }
 
 .one-card-back {
-    background-color:black;
+    background-color:white;
+    overflow:hidden;
 }
 
 
@@ -146,6 +152,145 @@ a {
     
 }
 
-/*
-   Main content
- */
+/* These styles are only for demo purposes */
+#example-0-front {
+    background-image:url("royal.jpg");
+    background-size: 108% auto;
+}
+
+#example-0-front h3 {
+    font-family: 'Averia Serif Libre', cursive;
+    font-size:25px;
+    color:white;
+    text-shadow: 2px 2px #000;
+    margin:5px;
+}
+
+#example-0-front p {
+    font-family: 'Averia Serif Libre', cursive;
+    font-size:18px;
+    font-weight:700;
+    color:white;
+    margin:0px;
+    background-color:rgba(0,0,0,0.5);
+}
+
+#example-0-back {
+    /*background-image:url("royal-1.jpg");*/
+    background-size: 108% auto;
+    overflow-y:scroll;
+}
+
+#example-0-back p {
+    font-family: 'Averia Serif Libre', cursive;
+    font-size:14px;
+    font-weight:400;
+    color:#000;
+    margin:0px;
+    margin-top:5px;
+    margin-left:5px;
+}
+
+#example-1-front {
+  background-image:url("babyface.jpg");
+  background-size: 108% auto;
+  color:#DAFDDE;
+  font-size:35px;
+  background-color:rgba(0,0,0,0.2);
+}
+
+#example-1-back {
+  background-color:#BABB33;
+  color:#009933;
+  font-size:40px;
+}
+
+#example-2-front {
+    background-color:#000;
+    color:#FFF;
+    text-align:center;
+    font-size:40px;
+    line-height:130px;
+}
+
+#example-2-back {
+    background-color:#FFF;
+    color:#000;
+    text-align:center;
+    font-size:32px;
+}
+
+#example-2-front b {
+    vertical-align:middle;
+}
+
+.video-area {
+    
+}
+
+#example-4-front, #example-4-back {
+    line-height:130px;
+}
+
+#example-4-front {
+    background-color:#CCC;
+    color:#123;
+    text-align:center;
+    font-size:40px;
+}
+
+#example-4-back {
+    background-color:#996633;
+    color:#FFF;
+    text-align:center;
+    font-size:40px;
+}
+
+#example-4-front b, #example-4-back b {
+    font-family: 'Averia Serif Libre', cursive;
+    vertical-align:middle;
+}
+
+#example-6-front {
+    background-color:#882244;
+    color:#667733;
+    text-align:center;
+}
+
+#example-6-back {
+    background-color:#996633;
+    color:#FFF;
+    text-align:center;
+    font-size:40px;
+}
+
+#example-6-front b {
+  font-family: 'Averia Serif Libre', cursive;
+  position:relative;
+  top:15%;
+  font-size:18px;
+}
+
+#example-7-back {
+  background-image: url('trees.jpeg');
+  background-size: 108% auto;
+}
+
+#example-7-front {
+  background-image: url('beaut.jpg');
+  background-size: 108% auto;
+}
+
+#example-8-front {
+  background-image: url('smith.jpg');
+  background-size: 70% auto;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+#example-8-back {
+  background-image: url('blue.png');
+  background-size: 70% auto;
+  background-repeat: no-repeat;
+  background-position: center; 
+}

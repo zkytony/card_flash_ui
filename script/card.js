@@ -5,37 +5,33 @@ $(document).ready(function() {
   
   // This function is called when .one-card element is clicked
   // We want to flip the card
-  $(document).on("click", ".one-card", function(e) {
+  var oneCardWidth = parseInt($(".one-card").width(), 10);
+  var oneCardHeight = parseInt($(".one-card").height(), 10);
+/*  $(".one-card").hover(
+    function() {
+      $(this).animate({
+	width: oneCardWidth * 1.5 + "px",
+	height: oneCardHeight * 1.5 + "px",
+      });
+    },
+    function() {
+      $(this).animate({
+	width: oneCardWidth + "px",
+	height: oneCardHeight + "px",
+      });      
+    }
+  );*/
+  $(".one-card").click(function(e) {
     flip($(this));
+  });
+    
+  $(document).on("click", "#loginLink", function(e) {
+    flip($("#register-login-card"));
   });
 
   $(document).on("click", "#loginLink", function(e) {
     flip($("#register-login-card"));
   });
-  
-  
-  // This function is called when refresh-btn is clicked
-  // We want to update the display of the card
-  $(document).on("click", "#refresh-btn", function() {
-    var width = parseInt($('#width-field').val());
-    var height = parseInt($('#height-field').val());
-    var radius = parseInt($('#radius-field').val());
-
-    $(".one-card").css({
-      'width': width + 'px',
-      'height': height + 'px',
-    });
-    // apply radius - needs to apply directly on front and back
-    $(".one-card-front").css({
-      'border-radius': radius + 'px'
-    });
-    $(".one-card-back").css({
-      'border-radius': radius + 'px'
-    });
-  });
-
-  // Make the card draggable
-  //$(".one-card").draggable();
 
 });
 
@@ -81,4 +77,53 @@ function showCard(front, back, width, height, radius, id, parentID) {
   $("#" + id + '-back').css({
     'border-radius': radius + 'px'
   });
+}
+
+var data = {
+    0: {
+	front: "<h3>Royal Baby:</h3><p>Catherine gives birth to a girl</p>",
+	back: "<img src=\"css/royal-1.jpg\" style=\"width:230px;height:auto\"> <p>London (CNN) It's a princess! That was the happy news on Saturday morning, after the Duchess of Cambridge -- the British royal also known as Catherine -- gave birth to her second child.</p>",
+    },
+    1: {
+	front: "<b>I HAVE A SURPRISE FOR YOU</b>",
+	back: "<b>IT'S POOP</b>",
+    },
+    2: {
+	front: "<b>KOOLIO</b>",
+	back: "<b>COOL.<br> New Game Changer.</b>",
+    },
+    3: {
+	front: "<div class='video-area'><iframe width='560' height='315' src='https://www.youtube.com/embed/SR6iYWJxHqs' frameborder='0' allowfullscreen style='width:100%; height:auto'></iframe></div>",
+	back: "",
+    },
+    4: {
+	front: "<b>しょうじょ</b>",
+	back: "<b>girl</b>",
+    },
+    5: {
+	front: "<div class='video-area'><iframe width='420' height='315' src='https://www.youtube.com/embed/Hd_ptbiPoXM' frameborder='0' allowfullscreen style='width:100%; height:auto'></iframe></div>",
+	back: "",
+    },
+    6: {
+	front: "<b>Try not to become a man of success, but rather try to become a man of value.</b>",
+	back: "<img src='css/einstein.jpg' style=\"width:108%;height:auto\">",
+    },
+    7: {
+	front: "",
+	back: "",
+    },
+    8: {
+	front: "",
+	back: "",
+    },
+}
+
+// Read data from given input json file. Convert it into a JS Object
+// Need to use the File API
+function readCards() {
+    for (i in data) {
+	if (data.hasOwnProperty(i)) {
+	    showCard(data[i].front, data[i].back, 230, 140, 10, "example-" + i, "card-" + i);
+	}
+    }
 }

@@ -8,11 +8,15 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" href="css/card.css" type="text/css" />
     <link rel="stylesheet" href="css/searchbar.css" type="text/css" />
+    <link rel="stylesheet" href="css/perfect-scrollbar.min.css" type="text/css" />
 
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Nunito:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Averia+Serif+Libre:400,700,400italic' rel='stylesheet' type='text/css'>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+    <script src="script/perfect-scrollbar.jquery.min.js"></script>
+    <script src="script/perfect-scrollbar.min.js"></script>
 
   </head>
   <body>
@@ -55,11 +59,18 @@
     </div>
     <script type="text/javascript" src="script/card.js"></script>
     <script>
-     for (var i = 0; i < 9; i++) {
+/*     for (var i = 0; i < 9; i++) {
        var parentID = "card-" + i;
        var cardID = "dummy-" + i;
        showCard("", "", 230, 140, 10, cardID, parentID);
      }
+*/
+
+     readCards();
+
+
+     $("#example-0-back").perfectScrollbar({maxScrollbarLength: 10});
+
     </script>
   </body>
 </html>
