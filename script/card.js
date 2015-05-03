@@ -5,10 +5,25 @@ $(document).ready(function() {
   
   // This function is called when .one-card element is clicked
   // We want to flip the card
-  $(document).on("click", ".one-card", function(e) {
-    flip($(this));
-  });
+  //  $(document).on("click", ".one-card", function(e) {
+  //    flip($(this));
+  //  });
 
+  $(".one-card")
+     .hover(function() {
+       $(this).closest(".one-card").css("z-index", 1);
+
+       // this is where the popping out effect happens
+       $(this).animate({ height: "+=40", width: "+=40", left: "-=10", top: "-=10" }, "fast");
+
+     }, function() {
+       $(this).closest(".one-card").css("z-index", 0);
+       $(this).animate({ height: "-=40", width: "-=40", left: "+=10", top: "+=10" }, "fast");
+     })
+     .on('click', function(e) {
+       flip($(this));
+     });
+    
   $(document).on("click", "#loginLink", function(e) {
     flip($("#register-login-card"));
   });
@@ -33,9 +48,6 @@ $(document).ready(function() {
       'border-radius': radius + 'px'
     });
   });
-
-  // Make the card draggable
-  //$(".one-card").draggable();
 
 });
 
