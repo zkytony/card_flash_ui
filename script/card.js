@@ -61,8 +61,8 @@ function showCard(front, back, width, height, radius, id, parentID) {
   // 'one-card' class defines the general style of one card
   // 'flipper', 'flipper-front', 'flipper-back', 'flip', together makes the div flippable
   var html = "<div id='" + id + "-card' class='one-card flipper'>";
-  html += "<div id='" + id + "-front' class='one-card-front flipper-front'>" + front + "</div>";
-  html += "<div id='" + id + "-back' class='one-card-back flipper-back'>" + back + "</div>";
+  html += "<div id='" + id + "-front' class='one-card-front flipper-front shadow'>" + front + "</div>";
+  html += "<div id='" + id + "-back' class='one-card-back flipper-back shadow'>" + back + "</div>";
   html += "</div>";
 
   $("#" + parentID).append(html);
