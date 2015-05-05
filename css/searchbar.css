@@ -12,7 +12,7 @@
 .search-bar input[type="submit"] {
   font-family: 'Nunito', sans-serif;
   font-size:18px;
-  width:14%;
+  width:12%;
   line-height: 40px;
   -webkit-border-top-right-radius: 15px;
   -webkit-border-bottom-right-radius: 15px;
@@ -20,14 +20,18 @@
   -moz-border-radius-bottomright: 15px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  border:5px solid #FFF;
-  background-color:#508686;
+  background-color:#752966;
   color:#EFEFEF;
+  border:1px solid #FFF;
 }
 
 .search-bar input[type="submit"]:hover {
-  background-color:#85E0E0;
-  color:#000;
+  color:#BFBFBF;
+}
+
+.search-bar input[type="submit"]:active {
+  background-color:#3D0A33;
+  color:#BFBFBF;
 }
 
 .search-bar {
@@ -38,6 +42,7 @@
   font-size:18px;
 
   width:83%;
+  padding-left:10px;
   line-height: 40px;
   background-color:#FFF;
   -webkit-border-top-left-radius: 15px;
@@ -46,5 +51,5 @@
   -moz-border-radius-bottomleft: 15px;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
-  border:5px solid #FFF;
+  border:1px solid #FFF;
 }
